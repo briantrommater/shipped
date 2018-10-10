@@ -1,0 +1,33 @@
+<p id="notice"><%= notice %></p>
+
+<h1>Boats</h1>
+
+<table>
+  <thead>
+    <tr>
+      <th>Captain</th>
+      <th>Name</th>
+      <th>Max Containers</th>
+      <th>Location</th>
+      <th colspan="4"></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @boats.each do |boat| %>
+      <tr>
+        <td><%= officer(boat.profile) %></td>
+        <td><%= boat.name %></td>
+        <td><%= boat.max_containers %></td>
+        <td><%= boat.location %></td>
+        <td><%= link_to 'Show', boat %></td>
+        <td><%= link_to 'Edit', edit_boat_path(boat) %></td>
+        <td><%= link_to 'Destroy', boat, method: :delete %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<br>
+
+<%= link_to 'New Boat', new_boat_path %>
