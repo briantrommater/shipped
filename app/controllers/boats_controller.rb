@@ -47,6 +47,6 @@ class BoatsController < ApplicationController
   private
     # Never trust parameters from the scary internet, only allow the white list through.
     def boat_params
-      params.require(:boat).permit(:name, :max_containers, :location, :profile_id)
+      params.require(:boat).permit(:name, :max_containers, :location, :profile_id, :boatpic)
     end
 end

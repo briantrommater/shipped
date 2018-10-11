@@ -10,6 +10,13 @@
 </p>
 
 <p>
+<% if @boat.boatpic.attached?%>
+<%= image_tag url_for(@boat.boatpic) %>
+
+<%end%>
+
+</p>
+<p>
   <strong>Location:</strong>
   <%= @boat.location %>
 </p>
