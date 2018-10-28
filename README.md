@@ -8,6 +8,6 @@ project : MikeBrucker
 
 And had to juggle my brother's wedding as best man.
 
-It's an awesome project and I worked extrememly
+It's an awesome project, and I worked very
 hard on it.  Helps when you are paired up with
 Mike though :)
